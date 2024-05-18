@@ -19,13 +19,13 @@ user_height = float(input('Your height: '))
 print('Please enter your weight in ' + weight_unit)
 user_weight = float(input('Your weight: '))
 
-adj_height = user_height
-adj_weight = user_weight
+adjust_height = user_height
+adjust_weight = user_weight
 
 if (chosen_system == '2'):
-  adj_height = user_height / 3.28084
-  adj_weight = user_weight / 2.20462
+  adjust_height = user_height / 3.28084
+  adjust_weight = user_weight / 2.20462
 
-bmi = adj_weight / (adj_height * adj_height)
+bmi = adjust_weight / (adjust_height * adjust_height)
 
 print('Your body-mass-index: ' + str(bmi))
